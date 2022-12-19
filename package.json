@@ -1,0 +1,17 @@
+{
+  "name": "whois-server",
+  "version": "1.0.0",
+  "description": "WHOIS Server implementation in Node.js, written in TypeScript",
+  "main": "dist/whois-server.js",
+  "devDependencies": {
+    "typescript": "^4.9.4",
+    "@types/node": "^18.11.17"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc && npm run copy-template-files",
+    "copy-template-files": "find ./responses -name \"*.tpl\" -exec cp {} ./dist/responses \\;\n"
+  },
+  "author": "Jonian Dervishi",
+  "license": "MIT"
+}
